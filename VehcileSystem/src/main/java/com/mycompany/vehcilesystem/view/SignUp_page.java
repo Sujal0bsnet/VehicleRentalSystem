@@ -239,19 +239,22 @@ public class SignUp_page extends javax.swing.JFrame {
         String confirm_password= ConfirmPassword.getText();
         if(password == null ? confirm_password != null : !password.equals(confirm_password)){
              JOptionPane.showMessageDialog(null,"Incroccet Password!");
+             UserSignText.setText("");
+             PasswordSignText.setText("");
+             ConfirmPassword.setText("");
         }else{
           Register_Model rm = new Register_Model(username,password);
         boolean result = auth.resgister(rm);
             if(result == true){
                 JOptionPane.showMessageDialog(null,"Account have been sucessfully created!");
+                Login_Page log = new Login_Page();
+                log.setVisible(true);
+                this.dispose();
             }else{
-                JOptionPane.showMessageDialog(null,"SignUp Dailed!");   
+                JOptionPane.showMessageDialog(null,"SignUp Failed!");   
             }
             
-        }
-        
-        
-        
+        }   
     }//GEN-LAST:event_SignUp2MouseClicked
 
 

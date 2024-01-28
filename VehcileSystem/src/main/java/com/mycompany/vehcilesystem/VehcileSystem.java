@@ -23,8 +23,8 @@ public class VehcileSystem {
         log.pack();
         log.setLocationRelativeTo(null);
         
-        RegistrationScreen rs = new RegistrationScreen();
-        rs.setVisible(true);
+//        RegistrationScreen rs = new RegistrationScreen();
+//        rs.setVisible(true);
         
         AuthDao auth = new AuthDao();
         String username = "username";

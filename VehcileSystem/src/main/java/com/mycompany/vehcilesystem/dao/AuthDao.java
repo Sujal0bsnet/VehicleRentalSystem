@@ -19,7 +19,7 @@ public class AuthDao extends MySqlConnection {
            PreparedStatement ps = null;
            Connection conn = openConnection();
            
-           String sql = "INSERT INTO users(username, password) VALUES(?,?)";
+           String sql = "INSERT INTO user(username, password) VALUES(?,?)";
            ps = conn.prepareStatement(sql);
            ps.setString(1, registerModel.getUsername());
            ps.setString(2,registerModel.getPassword());

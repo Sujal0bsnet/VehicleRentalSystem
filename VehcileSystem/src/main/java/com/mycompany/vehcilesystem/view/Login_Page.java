@@ -1,4 +1,4 @@
-/*
+ /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
@@ -18,6 +18,8 @@ public class Login_Page extends javax.swing.JFrame {
     public Login_Page() {
         initComponents();
     }
+    Connection conn;
+    PreparedStatement ps;
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -177,12 +179,10 @@ public class Login_Page extends javax.swing.JFrame {
     private void LoginBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginBtnActionPerformed
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection conn;
-            
             conn = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/VechileDatabase","root","@pokchu(xumu)0");
-            String sql = "Select * from users where username=? and password=?";
-            PreparedStatement ps = conn.prepareStatement(sql);
+            String sql = "Select * from user where username=? and password=?";
+            ps = conn.prepareStatement(sql);
             ps.setString(1,UserText.getText());
             ps.setString(2,PassText.getText());
             

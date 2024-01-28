@@ -27,67 +27,77 @@ public class Dashboard_Page extends javax.swing.JFrame {
     private void initComponents() {
 
         DasBackgrnd = new javax.swing.JPanel();
-        Btn1 = new javax.swing.JButton();
-        Btn2 = new javax.swing.JButton();
-        Btn3 = new javax.swing.JButton();
-        Btn4 = new javax.swing.JButton();
-        Btn5 = new javax.swing.JButton();
-        BckImg = new javax.swing.JLabel();
+        RegNo = new javax.swing.JButton();
+        CustomerPage = new javax.swing.JButton();
+        RentalPage = new javax.swing.JButton();
+        ReturnPage = new javax.swing.JButton();
+        LogOut = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        DasBackgrnd.setBackground(new java.awt.Color(33, 114, 75));
+        DasBackgrnd.setBackground(new java.awt.Color(0, 102, 102));
         DasBackgrnd.setPreferredSize(new java.awt.Dimension(800, 500));
         DasBackgrnd.setLayout(null);
 
-        Btn1.setBackground(new java.awt.Color(0, 0, 0,80));
-        Btn1.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        Btn1.setForeground(new java.awt.Color(255, 255, 255));
-        Btn1.setText("Vehilcle Registration");
-        Btn1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 4, true));
-        DasBackgrnd.add(Btn1);
-        Btn1.setBounds(300, 110, 191, 30);
-
-        Btn2.setBackground(new java.awt.Color(0, 0, 0,80));
-        Btn2.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        Btn2.setForeground(new java.awt.Color(255, 255, 255));
-        Btn2.setText("Customer Registration");
-        Btn2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 4, true));
-        Btn2.addActionListener(new java.awt.event.ActionListener() {
+        RegNo.setBackground(new java.awt.Color(0, 102, 102));
+        RegNo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        RegNo.setForeground(new java.awt.Color(204, 204, 204));
+        RegNo.setText("Vechile Registration");
+        RegNo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Btn2ActionPerformed(evt);
+                RegNoActionPerformed(evt);
             }
         });
-        DasBackgrnd.add(Btn2);
-        Btn2.setBounds(300, 170, 191, 35);
+        DasBackgrnd.add(RegNo);
+        RegNo.setBounds(310, 120, 190, 40);
 
-        Btn3.setBackground(new java.awt.Color(0, 0, 0,80));
-        Btn3.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        Btn3.setForeground(new java.awt.Color(255, 255, 255));
-        Btn3.setText("Rental Info");
-        Btn3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 4, true));
-        DasBackgrnd.add(Btn3);
-        Btn3.setBounds(300, 230, 191, 35);
+        CustomerPage.setBackground(new java.awt.Color(0, 102, 102));
+        CustomerPage.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        CustomerPage.setForeground(new java.awt.Color(204, 204, 204));
+        CustomerPage.setText("Customer");
+        CustomerPage.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CustomerPageActionPerformed(evt);
+            }
+        });
+        DasBackgrnd.add(CustomerPage);
+        CustomerPage.setBounds(310, 180, 190, 40);
 
-        Btn4.setBackground(new java.awt.Color(0, 0, 0,80));
-        Btn4.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        Btn4.setForeground(new java.awt.Color(255, 255, 255));
-        Btn4.setText("Return");
-        Btn4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 4, true));
-        DasBackgrnd.add(Btn4);
-        Btn4.setBounds(300, 300, 191, 35);
+        RentalPage.setBackground(new java.awt.Color(0, 102, 102));
+        RentalPage.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        RentalPage.setForeground(new java.awt.Color(204, 204, 204));
+        RentalPage.setText("Rental");
+        RentalPage.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RentalPageActionPerformed(evt);
+            }
+        });
+        DasBackgrnd.add(RentalPage);
+        RentalPage.setBounds(310, 240, 190, 40);
 
-        Btn5.setBackground(new java.awt.Color(0, 0, 0,40));
-        Btn5.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        Btn5.setForeground(new java.awt.Color(255, 255, 255));
-        Btn5.setText("Log Out");
-        Btn5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 4, true));
-        DasBackgrnd.add(Btn5);
-        Btn5.setBounds(300, 370, 191, 35);
+        ReturnPage.setBackground(new java.awt.Color(0, 102, 102));
+        ReturnPage.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        ReturnPage.setForeground(new java.awt.Color(204, 204, 204));
+        ReturnPage.setText("Return");
+        ReturnPage.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ReturnPageActionPerformed(evt);
+            }
+        });
+        DasBackgrnd.add(ReturnPage);
+        ReturnPage.setBounds(310, 300, 190, 40);
 
-        BckImg.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\91601.jpg")); // NOI18N
-        DasBackgrnd.add(BckImg);
-        BckImg.setBounds(0, -30, 800, 560);
+        LogOut.setBackground(new java.awt.Color(0, 102, 102));
+        LogOut.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        LogOut.setForeground(new java.awt.Color(204, 204, 204));
+        LogOut.setText("Log Out");
+        LogOut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LogOutActionPerformed(evt);
+            }
+        });
+        DasBackgrnd.add(LogOut);
+        LogOut.setBounds(310, 360, 190, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -103,9 +113,48 @@ public class Dashboard_Page extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void Btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn2ActionPerformed
+    private void RentalPageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RentalPageActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Btn2ActionPerformed
+        RentalPage rp = new RentalPage();
+        rp.setVisible(true);
+        rp.pack();
+        rp.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_RentalPageActionPerformed
+
+    private void CustomerPageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CustomerPageActionPerformed
+        // TODO add your handling code here:
+        Customer_Page cp = new Customer_Page();
+        cp.setVisible(true);
+        cp.pack();
+        cp.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_CustomerPageActionPerformed
+
+    private void ReturnPageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReturnPageActionPerformed
+        // TODO add your handling code here:
+        ReturnPage RP = new ReturnPage();
+        RP.setVisible(true);
+        RP.pack();
+        RP.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_ReturnPageActionPerformed
+
+    private void LogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogOutActionPerformed
+        // TODO add your handling code here:
+        Login_Page log = new Login_Page();
+        log.setVisible(true);
+        log.pack();
+        log.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_LogOutActionPerformed
+
+    private void RegNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegNoActionPerformed
+        // TODO add your handling code here:
+        Vehicle_Registration v = new Vehicle_Registration();
+        v.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_RegNoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -146,12 +195,11 @@ public class Dashboard_Page extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel BckImg;
-    private javax.swing.JButton Btn1;
-    private javax.swing.JButton Btn2;
-    private javax.swing.JButton Btn3;
-    private javax.swing.JButton Btn4;
-    private javax.swing.JButton Btn5;
+    private javax.swing.JButton CustomerPage;
     private javax.swing.JPanel DasBackgrnd;
+    private javax.swing.JButton LogOut;
+    private javax.swing.JButton RegNo;
+    private javax.swing.JButton RentalPage;
+    private javax.swing.JButton ReturnPage;
     // End of variables declaration//GEN-END:variables
 }
